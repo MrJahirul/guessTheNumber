@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+  </head>
+  <body>
+    <script>
+      let machineInput=Math.floor(Math.random()*100);
+      let userInput;
+      let arry=[];
+      // let userInput=prompt("Enter a number");
+      // userInput=Number.parseInt(userInput);
+     
+      while(machineInput!=userInput){
+        
+        userInput=prompt("Enter a number");
+        userInput=Number.parseInt(userInput);
+        arry.push(userInput);
+        if (machineInput==userInput) {
+            alert("Congratulation 👍")
+        }
+        else if(userInput>=machineInput){
+            alert("Your Number is getter than  machine number")
+
+        }
+        else{
+            alert("Your Number is ness than machine number")
+
+        }
+      }
+      alert("Your attempt is :"+arry.length)
+    </script>
+  </body>
+</html>
